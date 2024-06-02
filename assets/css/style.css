@@ -2,6 +2,12 @@ body {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   line-height: 1;
+  background-color: #e8e3fd;
+}
+
+.main-content {
+  position: relative !important;
+  padding-bottom: 2%;
 }
 
 strong {
@@ -11,9 +17,9 @@ strong {
 .jumbotron {
   text-align: center;
   background-color: transparent;
-  color: black;
+  color: #2c2e77;
   border-radius: 0;
-  border-bottom: 10px solid black;
+  border-bottom: 10px solid #17195e;
 }
 
 .row {
@@ -22,7 +28,7 @@ strong {
 }
 
 .hour {
-  background-color: #ffffff;
+  background-color: #6668ab;
   color: #000000;
   border-top: 1px dashed #000000;
   display: flex;
@@ -31,16 +37,15 @@ strong {
   justify-content: flex-end;
 }
 
-
 textarea {
   background: transparent;
   padding: 20px 0;
-  margin-top:8px;
+  margin-top: 8px;
   font-size: 25px;
   border: none;
   overflow: auto;
   resize: none;
-  color: #000000;
+  color: #fff;
   width: 100%;
   cursor: pointer;
 }
@@ -49,16 +54,62 @@ textarea {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
-  background-color: #06aed5;
+  color: #fff;
+  background-color: #6668ab;
   padding-top: 10px;
 }
 
 .save-btn:hover {
   transition: all 0.2s ease-in-out;
-  color: white;
+  color: #fff;
   background-color: #01718a;
   cursor: pointer;
+}
+
+.disabled-save {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background-color: #9ea1cf;
+  padding-top: 10px;
+}
+
+.past {
+  background-color: #c2c3e4;
+  color: #fff;
+}
+
+.present {
+  background-color: #444690;
+  color: #fff;
+}
+
+.future {
+  background-color: #17195e;
+  color: white;
+}
+
+.author {
+  position: fixed;
+  text-align: right;
+  background-color: #d8d8d8;
+  bottom: 2%;
+  right: 2%;
+}
+
+.made-with {
+  font-size: 12px;
+  padding: 0.2rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.made-by {
+  font-size: 10px;
+  font-weight: bold;
+  padding: 0 0.2rem;
+  margin: 0.2rem;
 }
 
 /* Provided CSS */
@@ -67,20 +118,7 @@ textarea {
   white-space: pre-wrap;
 }
 
-.past {
-  background-color: #d3d3d3;
-  color: white;
-}
 
-.present {
-  background-color: #ff6961;
-  color: white;
-}
-
-.future {
-  background-color: #77dd77;
-  color: white;
-}
 
 .saveBtn {
   border-left: 1px solid black;
